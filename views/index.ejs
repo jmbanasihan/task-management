@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body class="light">
+    <%- include('./partials/sidenav.ejs') %>
+
+    <main id="dashboard">
+      <section id="greeting">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-12 d-flex flex-row justify-content-between">
+              <div class="greeting__container d-flex flex-column">
+                <h1 class="greeting__title">Good Morning, Emilia S.</h1>
+                <p class="greeting__description text-muted">Welcome back, nice to see you again!</p>
+            </div>
+            <div class="search__container d-flex flex-row">
+              <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search..." aria-label="Search"
+                  aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="meeting">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="meeting__container">
+                <div class="meeting__title-container d-flex flex-row justify-content-between">
+                  <h2 class="meeting__title">Meeting List</h2>
+                  <p class="meeting__schedule text-muted">This Week<i class="bi bi-chevron-down"></i></p>
+                </div>
+                <div class="meeting__participants-container d-flex flex-row justify-content-center grid-stack grid-stack-6" id="gridbox1">
+                  <div class="meeting__group-container d-flex flex-column border">
+                    <div class="meeting__group-info d-flex flex-row">
+                      <div class="meeting-group-icon blue-bg d-flex justify-content-center align-items-center">
+                        <img class="profile-pic" src="./img/star.png">
+                      </div>
+  
+                      <div class="meeting__name-container">
+                        <h3 class="meeting__name">Team UI/UX Meeting</h3>
+                        <p class="meeting__description text-muted">Weekly team meeting</p>
+                      </div>
+                    </div>
+
+                    <div class="meeting__group-sched d-flex flex-row">
+                      <div class="meeting__group-time text-muted">10:00 - 11:00 AM</div>
+                      <div class="meeting__group-members"
+                      >
+                      <img class="member-pics" src="img/member-pics.png">
+                    </div>
+                    </div>
+                  </div>
+                  <div class="meeting__group-container border">
+                    <div class="meeting__group-info d-flex flex-row">
+                      <div class="meeting-group-icon orange-bg d-flex justify-content-center align-items-center">
+                        <img class="profile-pic" src="./img/star.png">
+                      </div>
+
+                      <div class="meeting__name-container">
+                        <h3 class="meeting__name">Usability Testing</h3>
+                        <p class="meeting__description text-muted">with Mr. Ferdinand</p>
+                      </div>
+                    </div>
+
+                    <div class="meeting__group-sched d-flex flex-row">
+                      <button class="decline-btn btn btn-danger">Decline</button>
+                      <button class="accept-btn btn btn-primary">Accept</button>
+                    </div>
+                    </div>
+                    <div class="meeting__group-container border">
+                      <div class="meeting__group-info d-flex flex-row">
+                        <div class="meeting-group-icon purple-bg d-flex justify-content-center align-items-center">
+                          <img class="profile-pic" src="./img/star.png">
+                        </div>
+
+                        <div class="meeting__name-container">
+                          <h3 class="meeting__name">Offline Meeting</h3>
+                          <p class="meeting__description text-muted">Client from USA</p>
+                        </div>
+                      </div>
+  
+                      <div class="meeting__group-sched d-flex flex-row">
+                        <div class="meeting__group-time text-muted">11:20 - 12:20 AM</div>
+                        <div class="meeting__group-members">
+                          <img class="member-pics" src="img/member-pics.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meeting__group-container d-flex flex-column border">
+                      <div class="meeting__group-info d-flex flex-row">
+                        <div class="meeting-group-icon blue-bg d-flex justify-content-center align-items-center">
+                          <img class="profile-pic" src="./img/star.png">
+                        </div>
+    
+                        <div class="meeting__name-container">
+                          <h3 class="meeting__name">Team UI/UX Meeting</h3>
+                          <p class="meeting__description text-muted">Weekly team meeting</p>
+                        </div>
+                      </div>
+  
+                      <div class="meeting__group-sched d-flex flex-row">
+                        <div class="meeting__group-time text-muted">10:00 - 11:00 AM</div>
+                        <div class="meeting__group-members"
+                        >
+                        <img class="member-pics" src="img/member-pics.png">
+                      </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <div class="container-fluid">
+          <div class="row mx-auto">
+            <div class="col-xxl-6">
+              <div class="schedule__container daily-container d-flex flex-column">
+                <div class="schedule__title-container d-flex flex-row mb-4">
+                  <h3 class="schedule__title">Daily Schedule</h3>
+                  <p class="schedule__weekly text-muted">This Week<i class="bi bi-chevron-down"></i></p>
+                </div>
+
+                <div class="daily-sched-container d-flex flex-row">
+                  <div class="time-container d-flex flex-column">
+                    <p class="time text-muted">08:00</p>
+                    <p class="time text-muted">09:00</p>
+                    <p class="time text-muted">10:00</p>
+                    <p class="time text-muted">11:00</p>
+                    <p class="time text-muted">12:00</p>
+                    <p class="time text-muted">13:00</p>
+                    <p class="time text-muted">14:00</p>
+                  </div>
+                  <div class="meeting-in-progress d-flex flex-column grid-stack grid-stack-6" id="gridbox1">
+                    <div class="schedule__group-box d-flex flex-row justify-content-center align-items-center border border-primary margin-left-162"> 
+                        <img class="sched-pic blue-bg" src="./img/sched-grp-icon.png">               
+                      
+                      <div class="sched__name-container mt-3">
+                        <h3 class="sched__name">Team Meeting</h3>
+                        <p class="sched__description blue-color">08:00 AM - 09:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="schedule__group-box d-flex flex-row justify-content-center align-items-center border border-danger margin-right-90">
+                        <img class="sched-pic orange-bg" src="./img/sched-grp-icon.png">
+                      
+                      <div class="sched__name-container mt-3">
+                        <h3 class="sched__name">Usability Testing</h3>
+                        <p class="sched__description orange-color">09:30 AM - 10:30 AM</p>
+                      </div>
+                    </div>
+                    <div class="schedule__group-box d-flex flex-row justify-content-center align-items-center purple-border margin-left-162">
+                        <img class="sched-pic purple-bg" src="./img/sched-grp-icon.png">
+                      
+                      <div class="sched__name-container mt-3">
+                        <h3 class="sched__name">Office Meeting</h3>
+                        <p class="sched__description purple-color">11:20 AM - 12:20 AM</p>
+                      </div>
+                    </div>
+                    <div class="schedule__group-box d-flex flex-row justify-content-center align-items-center border border-success margin-right-90">
+                        <img class="sched-pic green-bg" src="./img/sched-grp-icon.png">
+                      
+                      <div class="sched__name-container mt-3">
+                        <h3 class="sched__name">Client Briefing</h3>
+                        <p class="sched__description green-color">12:00 AM - 14:00 AM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+            </div>
+            <div class="col-xxl-6">
+              <div class="schedule__container d-flex flex-column">
+                <div class="schedule__title-container d-flex flex-row mb-4">
+                  <h3 class="schedule__title">Task History</h3> 
+                  <p class="schedule__weekly text-muted">This Week<i class="bi bi-chevron-down"></i></p>
+                </div>
+                <div class="schedule__task-container d-flex flex-row">
+                  <div class="schedule__task-time extra-light-blue-bg d-flex flex-row justify-content-center align-items-center">
+                    <img class="task-icon-container light-blue-bg" src="./img/task-blue-icon.png"></img>
+                    <div class="task-specs-container">
+                      <h2 class="task-specs-title light-blue-color mt-2">20hr</h2>
+                      <p class="task-specs-description">Time</p>
+                    </div>
+                  </div> 
+                  <div class="schedule__task-meeting extra-light-orange-bg d-flex flex-row justify-content-center align-items-center">
+                    <img class="task-icon-container light-orange-bg" src="./img/task-orange-icon.png"></img>
+                    <div class="task-specs-container">
+                      <h2 class="task-specs-title orange-color mt-2">250</h2>
+                      <p class="task-specs-description">Meeting</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="attended-meeting-container d-flex flex-row">
+                  <div class="attended-meeting-text d-flex flex-column">
+                    <h3 class="attended-meeting-title">Attended Meeting</h3>
+                    <p class="attended-meeting-description green-color">20 hours <span class="text-muted">call on this week.</span></p>
+                  </div>
+                  <img class="attended-meeting-pics" src="./img/attended-meeting-member-pics.png">
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside id="right-menu" class="right-menu-padding border d-flex flex-column">
+      <div class="right-menu__header d-flex flex-row justify-content-between">
+        <i class="bi bi-bell notif"></i>
+        <img src="./img/dp1.jpg" alt="image" class="right-menu__header-pic">
+      </div>
+      <div class="right-menu__container d-flex flex-column">
+        <div class="calendar">
+          <div class="calendar-header">
+            <span class="month-picker" id="month-picker">February</span>
+            <div class="year-picker">
+              <span class="year-change" id="prev-year">
+                <pre class="mt-3"><i class="bi bi-chevron-left blue-color"></i></pre>
+              </span>
+              <span id="year">2021</span>
+              <span class="year-change" id="next-year">
+                <pre class="mt-3"><i class="bi bi-chevron-right blue-color"></i></pre>
+              </span>
+            </div>
+          </div>
+          <div class="calendar-body">
+            <div class="calendar-week-day">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+          <div class="calendar-footer">
+            <div class="toggle">
+              <span>Dark Mode</span>
+              <div class="dark-mode-switch">
+                <div class="dark-mode-switch-ident"></div>
+              </div>
+            </div>
+          </div>
+          <div class="month-list"></div>
+        </div>
+        <div class="right-menu__profile-list d-flex flex-column">
+          <div class="meeting-team__text-container d-flex flex-row justify-content-between">
+            <h3 class="meeting-team__title">Meeting Team</h3>
+            <p class="meeting-team__see-all blue-color">See all</p>
+          </div>
+          <div class="meeting-team__profile-container d-flex flex-row justify-content-between mb-4">
+            <div class="meeting-team__profile-info-container d-flex flex-row justify-content-between">
+              <img src="./img/dp1.jpg" alt="image" class="meeting-team__profile-icon">
+            <div class="meeting-team__profile-name-container d-flex flex-column mt-1">
+              <h3 class="meeting-team__profile-name">Aseif Rahman</h3>
+              <p class="meeting-team__profile-description text-muted">Creative Director</p>
+            </div>
+            </div>
+  
+            <div class="meeting-team__profile-icon-container d-flex flex-row">
+              <i class="bi bi-telephone-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            <i class="bi bi-camera-video-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            </div>
+            
+          </div>
+  
+          <div class="meeting-team__profile-container d-flex flex-row justify-content-between mb-4">
+            <div class="meeting-team__profile-info-container d-flex flex-row justify-content-between">
+              <img src="./img/dp2.jpg" alt="image" class="meeting-team__profile-icon">
+            <div class="meeting-team__profile-name-container mt-1">
+              <h3 class="meeting-team__profile-name">Lexy Sanz</h3>
+              <p class="meeting-team__profile-description text-muted">UX Designer</p>
+            </div>
+            </div>
+            
+  
+            <div class="meeting-team__profile-icon-container d-flex flex-row">
+              <i class="bi bi-telephone-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            <i class="bi bi-camera-video-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            </div>
+          </div>
+  
+          <div class="meeting-team__profile-container d-flex flex-row justify-content-between">
+            <div class="meeting-team__profile-info-container d-flex flex-row">
+              <img src="./img/dp3.jpg" alt="image" class="meeting-team__profile-icon">
+            <div class="meeting-team__profile-name-container mt-1">
+              <h3 class="meeting-team__profile-name">Kraul Brown</h3>
+              <p class="meeting-team__profile-description text-muted">UI Designer</p>
+            </div>
+            </div>
+            
+  
+            <div class="meeting-team__profile-icon-container d-flex flex-row">
+              <i class="bi bi-telephone-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            <i class="bi bi-camera-video-fill meeting-team__icon-conainer d-flex justify-content-center align-items-center text-muted"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+    <script src="./js/script.js"></script>
+    <script src="https://gridstackjs.com/node_modules/gridstack/dist/gridstack-h5.js"></script>
+  </body>
+</html>
